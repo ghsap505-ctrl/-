@@ -1,0 +1,120 @@
+/* التنسيقات العامة للجسم بألوان جديدة */
+body {
+    background-color: #0a0a0a;
+    background-image: url('bg_futuristic.jpg'); /* الصورة الجديدة */
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Courier New', Courier, monospace; /* تغيير الخط */
+    color: #e0e0e0; /* لون نص فاتح */
+}
+
+/* جعل القائمة أفقية */
+nav ol li, ul li {
+    display: inline-block;
+    margin-left: 15px;
+    background-color: rgba(255, 215, 0, 0.1); /* خلفية ذهبية شفافة */
+    padding: 8px 15px;
+    border: 1px solid #ffd700;
+}
+
+/* تنسيق الروابط */
+a:link {
+    color: #00ced1; /* فيروزي */
+    text-decoration: none;
+}
+
+a:visited {
+    color: #20b2aa;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffd700; /* ذهبي عند التمرير */
+    text-decoration: overline;
+}
+
+a:active {
+    color: #ffffff;
+    text-decoration: overline;
+}
+
+/* تنسيق العناوين */
+h1, h2, h3 {
+    color: #ffd700;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+    font-style: italic;
+}
+
+/* تنسيق الفقرات */
+p {
+    text-indent: 30px;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* تنسيق الجدول بخصائص الحدود الجديدة */
+.custom-table {
+    border-width: 4px;
+    border-color: #00ced1;
+    border-style: solid;
+    border-top-style: double;    /* Border-top-style */
+    border-right-style: dashed;  /* Border-right-style */
+    border-bottom-style: groove; /* Border-bottom-style */
+    
+    height: 250px;
+    margin: 40px auto;
+    padding: 20px;
+    
+    outline-color: #ffd700;
+    outline-style: solid;
+    outline-width: 2px;
+    
+    background-color: rgba(0, 0, 0, 0.85);
+    width: 90%;
+}
+
+.custom-table td, .custom-table th {
+    border: 1px solid #00ced1;
+    padding: 12px;
+    vertical-align: bottom;      /* Vertical-align تغيير المحاذاة */
+}
+
+/* تطبيق خصائص الهوامش والعرض */
+.info-box {
+    margin-top: 35px;
+    margin-right: 25px;
+    margin-bottom: 35px;
+    padding: 25px;
+    background-color: rgba(0, 206, 209, 0.05);
+    border-left: 5px solid #00ced1;
+}
+
+.hidden-element {
+    visibility: hidden;
+}
+
+.block-display {
+    display: block;
+    background-color: #1a1a1a;
+    padding: 10px;
+    margin: 15px 0;
+    border: 1px dashed #ffd700;
+}
+
+.inline-display {
+    display: inline;
+    color: #ffd700;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* القوائم */
+ol {
+    list-style-type: lower-alpha;
+}
+
+ul {
+    list-style-type: circle;
+}
