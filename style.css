@@ -1,120 +1,100 @@
-/* التنسيقات العامة للجسم بألوان جديدة */
+/* التنسيقات العامة لمشروع عبدالله مع صورة الخلفية data.jpg */
 body {
-    background-color: #0a0a0a;
-    background-image: url('bg_futuristic.jpg'); /* الصورة الجديدة */
+    background-color: #1a0033;
+    background-image: url('data.jpg'); /* اسم الصورة المطلوب */
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-    font-family: 'Courier New', Courier, monospace; /* تغيير الخط */
-    color: #e0e0e0; /* لون نص فاتح */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f0f0f0;
+    margin: 0;
+    padding: 0;
 }
 
-/* جعل القائمة أفقية */
+/* جعل القائمة أفقية تماماً */
+nav ol, ul {
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
 nav ol li, ul li {
-    display: inline-block;
-    margin-left: 15px;
-    background-color: rgba(255, 215, 0, 0.1); /* خلفية ذهبية شفافة */
-    padding: 8px 15px;
-    border: 1px solid #ffd700;
+    display: inline-block; /* ترتيب أفقي */
+    margin: 10px 15px;
+    background-color: rgba(75, 0, 130, 0.7); /* أرجواني داكن شفاف */
+    padding: 12px 20px;
+    border: 1px solid #9370db;
+    border-radius: 8px;
 }
 
-/* تنسيق الروابط */
-a:link {
-    color: #00ced1; /* فيروزي */
+nav ol li a, ul li a {
+    color: #e6e6fa;
     text-decoration: none;
+    font-weight: bold;
 }
 
-a:visited {
-    color: #20b2aa;
-    text-decoration: none;
-}
-
+/* تنسيق الروابط عند التفاعل */
 a:hover {
-    color: #ffd700; /* ذهبي عند التمرير */
-    text-decoration: overline;
-}
-
-a:active {
     color: #ffffff;
     text-decoration: overline;
+    background-color: rgba(147, 112, 219, 0.5);
+}
+
+/* تنسيق الجدول بخصائص الحدود المتقدمة */
+.data-table {
+    border-width: 5px;              /* border-width */
+    border-color: #9370db;          /* color */
+    border-style: solid;            /* style */
+    border-top-style: dashed;       /* Border-top-style */
+    border-right-style: double;     /* Border-right-style */
+    border-bottom-style: dotted;    /* Border-bottom-style */
+    
+    height: 350px;                  /* height */
+    margin: 50px auto;              /* margin */
+    padding: 25px;                  /* padding */
+    
+    /* خصائص الإطار الخارجي */
+    outline-color: #ba55d3;         /* outline-color */
+    outline-style: solid;           /* outline-style */
+    outline-width: 3px;             /* outline-width */
+    
+    background-color: rgba(26, 0, 51, 0.9);
+    width: 80%;
+    color: #ffffff;
+}
+
+.data-table td, .data-table th {
+    border: 1px solid #9370db;
+    padding: 15px;
+    text-align: center;
+    vertical-align: bottom;         /* Vertical-align */
+}
+
+/* تنسيق بطاقات المعلومات المنظمة */
+.info-card-1, .info-card-2, .info-card-3 {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 25px;
+    border-right: 5px solid #9370db;
+    margin-top: 25px;               /* margin-top */
+    margin-right: 40px;             /* margin-right */
+    margin-bottom: 25px;            /* margin-bottom */
+}
+
+/* خصائص العرض والظهور */
+.invisible-box {
+    visibility: hidden;             /* visibility */
+}
+
+.inline-text {
+    display: inline;                /* display */
+    background-color: #4b0082;
+    padding: 3px 8px;
+    border-radius: 4px;
 }
 
 /* تنسيق العناوين */
 h1, h2, h3 {
-    color: #ffd700;
+    color: #ba55d3;
+    text-shadow: 2px 2px 4px #000;
     text-transform: uppercase;
-    text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
-    font-style: italic;
-}
-
-/* تنسيق الفقرات */
-p {
-    text-indent: 30px;
-    font-size: 1.1em;
-    line-height: 1.6;
-}
-
-/* تنسيق الجدول بخصائص الحدود الجديدة */
-.custom-table {
-    border-width: 4px;
-    border-color: #00ced1;
-    border-style: solid;
-    border-top-style: double;    /* Border-top-style */
-    border-right-style: dashed;  /* Border-right-style */
-    border-bottom-style: groove; /* Border-bottom-style */
-    
-    height: 250px;
-    margin: 40px auto;
-    padding: 20px;
-    
-    outline-color: #ffd700;
-    outline-style: solid;
-    outline-width: 2px;
-    
-    background-color: rgba(0, 0, 0, 0.85);
-    width: 90%;
-}
-
-.custom-table td, .custom-table th {
-    border: 1px solid #00ced1;
-    padding: 12px;
-    vertical-align: bottom;      /* Vertical-align تغيير المحاذاة */
-}
-
-/* تطبيق خصائص الهوامش والعرض */
-.info-box {
-    margin-top: 35px;
-    margin-right: 25px;
-    margin-bottom: 35px;
-    padding: 25px;
-    background-color: rgba(0, 206, 209, 0.05);
-    border-left: 5px solid #00ced1;
-}
-
-.hidden-element {
-    visibility: hidden;
-}
-
-.block-display {
-    display: block;
-    background-color: #1a1a1a;
-    padding: 10px;
-    margin: 15px 0;
-    border: 1px dashed #ffd700;
-}
-
-.inline-display {
-    display: inline;
-    color: #ffd700;
-    font-weight: bold;
-    text-decoration: underline;
-}
-
-/* القوائم */
-ol {
-    list-style-type: lower-alpha;
-}
-
-ul {
-    list-style-type: circle;
 }
